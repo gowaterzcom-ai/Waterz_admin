@@ -1,0 +1,254 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 0 6rem 0;
+  }
+  
+  .formGrid {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    width: 98%;
+    margin: 2rem 0;
+  }
+  
+  .yatchBox {
+    margin: 1rem 0 3rem 0;
+    width: 100%;
+  }
+  
+  .section_head {
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 58.29px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  
+  .section_head2 {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 46.29px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #2B6BE7;
+    margin-bottom: 1.5rem;
+  }
+  
+  .left {
+    width: 45%;
+  }
+  
+  .right {
+    width: 45%;
+  }
+  
+  .formGroup label {
+    font-weight: 500;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .formGroup input,
+  .formGroup textarea,
+  .formGroup select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 18px;
+    background-color: #f8f8f8;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .formGroup textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .formGroup input:focus,
+  .formGroup textarea:focus,
+  .formGroup select:focus {
+    outline: none;
+    border-color: #2B6BE7;
+    box-shadow: 0 0 0 2px rgba(43, 107, 231, 0.1);
+  }
+  
+  .error {
+    border-color: #dc3545 !important;
+  }
+  
+  .errorMessage {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+  .successMessage {
+    color: #28a745;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+  .fileUpload {
+    border: 2px dashed #ddd;
+    padding: 2rem;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #f8f8f8;
+    width: 100%;
+    cursor: pointer;
+    transition: border-color 0.2s;
+  }
+  
+  .fileUpload:hover {
+    border-color: #2B6BE7;
+  }
+  
+  .fileUpload input {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  
+  .imagePreview {
+    margin-top: 1rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .imagePreview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .uploadingStatus {
+    margin-top: 0.5rem;
+    color: #666;
+  }
+  
+  .bankDetails {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  
+  .bankDetails h2 {
+    font-size: 32px;
+    font-weight: 400;
+    color: #2B6BE7;
+    margin-bottom: 1.5rem;
+  }
+  
+  .bankGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8rem;
+    row-gap: 1.5rem;
+  }
+  
+  .submitButton {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background-color: #2B6BE7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .submitButton:hover {
+    background-color: #1b4ca1;
+  }
+  
+  .submitButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+    .otpButton {
+    padding: 12px 1rem;
+    background-color: #1a75ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .otpButton:hover {
+    background-color: #0052cc;
+  }
+
+  .otpInput{
+    padding: 12px 1rem;
+    margin: 0 10px;
+    width: 5rem;
+    border-radius: 12px;
+  }
+  .otpSection{
+    margin-left: 3px;
+  }
+  
+  @media (max-width: 768px) {
+    .form {
+      padding: 1rem;
+    }
+  
+    .formGrid {
+      flex-direction: column;
+    }
+  
+    .left,
+    .right {
+      width: 100%;
+    }
+  
+    .bankGrid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  
+    .section_head {
+      font-size: 32px;
+      line-height: 42px;
+    }
+  
+    .section_head2 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  
+    .formGroup label {
+      font-size: 20px;
+    }
+  }

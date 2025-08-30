@@ -1,0 +1,112 @@
+.comp_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2b6be7;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    box-sizing: border-box;
+    height: auto; /* Allow height to grow when mobile menu is open */
+    z-index: 1000;
+    transition: backdrop-filter 0.3s;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1450px;
+    width: 90%;
+    padding: 10px 0;
+    /* background-color: #2b6be7; */
+  }
+
+  .logobox{
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Branding area (optional) */
+  .brand {
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+    width: 9rem;
+    /* background: white; */
+    border-radius: 3rem;
+    /* padding: 12px 8px 0px 8px; */
+  }
+  
+  /* Desktop navigation */
+  .desktop_nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  /* Hamburger icon - hidden on larger screens */
+  .hamburger {
+    display: none;
+    font-size: 32px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  /* Mobile menu styles */
+  .mobile_menu {
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    background-color: #ffffff;
+    width: 11rem;
+    padding: 1rem 0;
+    gap: 10px;
+    box-shadow: -2px 4px 27px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Nav items common styling */
+  .item {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 41.45px;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .comp_body{
+        background: none;
+        align-items: flex-end;
+    }
+    .mobile_menu{
+        display: flex;
+    }
+    .content{
+       background-color: #2b6be7;
+       width: 100vw;
+    }
+    .brand{
+      margin-left: 1rem;
+    }
+    .item{
+        margin-left: 1rem;
+        color: #000000;
+    }
+    .desktop_nav {
+      display: none; /* Hide desktop nav on mobile */
+    }
+    
+    .hamburger {
+      display: block; /* Show hamburger icon on mobile */
+      margin-right: 1rem;
+    }
+  }
+  

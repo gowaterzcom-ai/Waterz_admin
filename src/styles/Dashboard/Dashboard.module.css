@@ -1,0 +1,154 @@
+.dashboardContainer {
+    width: 90%;
+    max-width: 1450px;
+    padding: 1.5rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.chartCard {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.chartHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.chartHeader h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #1E293B;
+    margin: 0;
+}
+
+.filterSelect {
+    padding: 0.5rem;
+    border: 1px solid #E2E8F0;
+    border-radius: 4px;
+    background-color: white;
+    color: #64748B;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.chartWrapper {
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.statItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.statItem span {
+    font-size: 14px;
+    color: #64748B;
+    margin-bottom: 0.5rem;
+}
+
+.statItem strong {
+    font-size: 24px;
+    color: #1E293B;
+}
+
+.totalEarnings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.totalEarnings span {
+    font-size: 16px;
+    color: #64748B;
+    margin-bottom: 0.5rem;
+}
+
+.totalEarnings strong {
+    font-size: 28px;
+    color: #1E293B;
+}
+
+/* Loading and Error States */
+.loading, .error {
+    text-align: center;
+    padding: 2rem;
+    font-size: 18px;
+    line-height: 24px;
+    width: 100%;
+    grid-column: span 2;
+}
+
+.loading {
+    color: #64748B;
+}
+
+.error {
+    color: #EF4444;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .dashboardContainer {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        gap: 1rem;
+        overflow-x: auto;
+    }
+
+    .chartCard {
+        padding: 1rem;
+        min-width: 300px;
+    }
+
+    .chartHeader h2 {
+        font-size: 18px;
+    }
+
+    .statsGrid {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .statItem strong {
+        font-size: 20px;
+    }
+
+    .totalEarnings strong {
+        font-size: 24px;
+    }
+
+    .loading, .error {
+        grid-column: span 1;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .dashboardContainer {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .chartCard {
+        min-width: 600px;
+    }
+}

@@ -1,0 +1,24 @@
+.body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #565c68e7;
+    z-index: 1111;
+}
+.container{
+    width: 5rem;
+    height: 8.3rem;
+    /* background: #000000; */
+    border-radius: 10rem;
+    border: none;
+    padding: 2rem 0;
+}
+.loadergif{
+    width: 100%;
+    animation: rotate 1s linear infinite;
+}

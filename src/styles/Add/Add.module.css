@@ -1,0 +1,108 @@
+.addContainer {
+    width: 90%;
+    max-width: 1450px;
+    padding: 1.5rem;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 46.29px;
+    letter-spacing: 0.01em;
+    color: #2B6BE7;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cardImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cardDescription {
+    padding: 1.5rem;
+    margin: 0;
+    color: #64748B;
+    font-size: 16px;
+    line-height: 1.5;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.addButton {
+    margin: 0 1.5rem 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #1766FF;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.addButton:hover {
+    background-color: #1557D9;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .addContainer {
+        padding: 1rem;
+    }
+
+    .title {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 1.5rem;
+    }
+
+    .cardsContainer {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    .cardDescription {
+        padding: 1rem;
+        font-size: 15px;
+    }
+
+    .addButton {
+        margin: 0 1rem 1rem;
+        padding: 0.5rem 1rem;
+        font-size: 15px;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .cardsContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

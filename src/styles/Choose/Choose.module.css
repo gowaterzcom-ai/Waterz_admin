@@ -1,0 +1,43 @@
+.comp_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    width: 90%;
+    max-width: 1450px;
+    margin: 8rem 0 1rem 0;
+}
+
+.yatchBox {
+    margin: 2rem 0 3rem 0;
+    width: 100%;
+}
+
+.section_head {
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 58.29px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.section_head2 {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 46.29px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #2B6BE7;
+    margin-bottom: 1.5rem;
+}
+
+.yachtGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    row-gap: 3rem; /* Larger gap between rows */
+    width: 100%;
+    margin: 1rem 0 3rem 0;
+}

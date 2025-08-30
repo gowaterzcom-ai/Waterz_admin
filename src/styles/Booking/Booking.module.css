@@ -1,0 +1,211 @@
+.comp_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.bookingContainer {
+    width: 100%;
+    max-width: 1450px;
+    padding: 1.5rem;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 46.29px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #2B6BE7;
+    margin-bottom: 1.5rem;
+}
+
+/* Status Tabs Styling */
+.statusTabs {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #E2E8F0;
+    padding-bottom: 0.5rem;
+    width: 100%;
+}
+
+.tab {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31.09px;
+    letter-spacing: 0.01em;
+    color: #64748B;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 0;
+    transition: all 0.2s ease;
+}
+
+.activeTab {
+    color: #1766FF;
+    position: relative;
+}
+
+.activeTab::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #1766FF;
+}
+
+/* Filter Bar Styling */
+.filterBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    width: 95%;
+}
+
+.bookingTabs {
+    display: flex;
+    gap: 0.5rem;
+    background-color: #F8F9FE;
+    padding: 0.25rem;
+    border-radius: 7px;
+}
+
+.filterTab {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    border-radius: 7px;
+    cursor: pointer;
+    color: #64748B;
+    transition: all 0.2s ease;
+}
+
+.activeFilterTab {
+    background-color: white;
+    color: #1766FF;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Box Styling */
+.searchBox {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #E2E8F0;
+    border-radius: 7px;
+    padding: 8px 16px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.searchInput {
+    border: none;
+    outline: none;
+    padding: 0 0.5rem;
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.searchButton {
+    background: none;
+    border: none;
+    color: #64748B;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Bookings Grid */
+.bookingsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 95%;
+    padding: 1rem 0;
+}
+
+/* Loading and Error States */
+.loading, .error {
+    text-align: center;
+    padding: 2rem;
+    font-size: 18px;
+    line-height: 24px;
+    width: 100%;
+}
+
+.loading {
+    color: #64748B;
+}
+
+.error {
+    color: #EF4444;
+}
+
+/* Responsive Styling */
+@media (max-width: 1150px) {
+    .bookingContainer {
+        padding: 1rem;
+    }
+
+    .title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .statusTabs {
+        gap: 1rem;
+    }
+
+    .tab {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .filterBar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .bookingTabs {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding: 0.5rem;
+    }
+
+    .bookingTabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .filterTab {
+        white-space: nowrap;
+    }
+
+    .searchBox {
+        max-width: none;
+        width: 90%;
+    }
+
+    .bookingsGrid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

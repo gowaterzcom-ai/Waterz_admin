@@ -1,0 +1,187 @@
+.comp_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    width: 90%;
+    max-width: 1450px;
+    margin: 0rem 0 1rem 0;
+}
+
+.image_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    width: 100%;
+    max-width:900px;
+    border-radius: 6px;
+    padding: 6px 0;
+    margin: 0 auto 3rem auto;
+    height: 450px;
+}
+
+.Y2 {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.yatchBox {
+    margin: 0rem 0 3rem 0;
+    width: 100%;
+}
+
+.section_head {
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 58.29px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.section_head2 {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 46.29px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #2B6BE7;
+    margin-bottom: 1.5rem;
+}
+
+.yacht_details_box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.prices{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 80%;
+}
+.price_head{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 62.18px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+.price_box{
+    display: flex;
+    align-items: start;
+    width: 40%;
+}
+.pricess{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 32px 0 0;
+    border-right: 1px solid grey;
+}
+.pricess2{
+    display: flex;
+    flex-direction: column;
+    padding: 0 32px;
+    gap: 1rem;
+}
+.price_type{
+    color:#1766FF;
+    font-size: 18px;
+}
+.price_value{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.Right{
+    display: flex;
+    gap: 1rem;
+    width: 40%;
+}
+.bookButton {
+    margin-top: 1rem;
+    padding: 0.75rem 2.5rem;
+    background-color: #2B6BE7;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.bookButton2 {
+    margin-top: 1rem;
+    padding: 0.75rem 2.5rem;
+    background-color: #E6E8EB;
+    color: #fd0925;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.bookButton:hover {
+    background-color: #184aa1;
+}
+
+.about, .summary, .schedule, .specifications, .meetingPoint, .guidelines, .faqs, .cancellation {
+    /* background-color: #f9f9f9; */
+    border-radius: 8px;
+    padding: 1.5rem 0;
+    text-align: left;
+}
+
+.about h3, .summary h3, .schedule h3, .specifications h3, .meetingPoint h3, .guidelines h3, .faqs h3, .cancellation h3 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    color: #000000;
+    font-weight: 400;
+}
+
+.about p, .summary p, .schedule ul, .specifications p, .meetingPoint p, .guidelines ul, .faqs p, .cancellation p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0.5rem 0;
+}
+.about b, .summary b, .schedule b, .specifications b, .meetingPoint b, .guidelines b, .faqs b, .cancellation b {
+    color: #2B6BE7;
+    font-weight: 500;
+}
+
+.schedule ul, .guidelines ul {
+    padding-left: 1.5rem;
+    list-style-type: disc;
+}
+
+.schedule ul li, .guidelines ul li {
+    margin-bottom: 0.75rem;
+}
+
+.specifications p, .meetingPoint p {
+    margin: 0.5rem 0;
+}
+
+.faqs p {
+    margin-bottom: 1rem;
+}
+
+.cancellation p {
+    margin-bottom: 0.75rem;
+}

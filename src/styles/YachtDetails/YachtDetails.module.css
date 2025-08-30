@@ -1,0 +1,360 @@
+.comp_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+  width: 90%;
+  max-width: 1450px;
+  margin: 1rem 0;
+}
+
+.image_box {
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    width: 100%;
+    max-width:900px;
+    border-radius: 6px;
+    padding: 6px 0;
+    margin: 0 auto 3rem auto;
+    height: 450px;
+}
+
+.Y2 {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.yatchBox {
+  margin: 0 0 1rem 0;
+  width: 100%;
+}
+
+.section_head {
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 58.29px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.prices{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 40%;
+}
+.price_head{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 62.18px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+.price_box{
+    display: flex;
+    align-items: start;
+    width: 100%;
+}
+.pricess{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 32px 0 0;
+    border-right: 1px solid grey;
+}
+.pricess2{
+    display: flex;
+    flex-direction: column;
+    padding: 0 32px;
+    gap: 1rem;
+}
+.price_type{
+    color:#1766FF;
+    font-size: 18px;
+}
+.price_value{
+    font-weight: 600;
+    font-size: 18px;
+}
+.bookButton {
+    margin-top: 1rem;
+    padding: 0.75rem 2.5rem;
+    background-color: #2B6BE7;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.bookButton2 {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 0.75rem 2.5rem;
+    background-color: #E6E8EB;
+    color: #fd0925;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.bookButton:hover {
+    background-color: #184aa1;
+}
+
+.ownerInfo {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.viewProfile {
+  color: #1766FF;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Prices Section */
+.pricesContainer {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.regularPrices {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.priceColumn {
+  padding-right: 2rem;
+  border-right: 1px solid #e2e8f0;
+}
+
+.priceColumn:last-child {
+  border-right: none;
+}
+
+.priceColumn h3 {
+  color: #1766FF;
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+}
+
+.priceColumn p {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.setPricesBtn {
+  background: none;
+  border: none;
+  color: #1766FF;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0.5rem 0;
+  text-decoration: underline;
+}
+
+/* Pricing Panel Styles */
+.pricingPanel {
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  width: 100%;
+  /* max-width: 600px; */
+  border: 1px solid #ddd;
+  width: 93%;
+}
+
+.pricesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.priceCategory h4 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.priceInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inputGroup label {
+  color: #1766FF;
+  font-size: 14px;
+}
+
+.inputGroup input {
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.pricingActions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Action Buttons for Pricing */
+.approveBtn,
+.rejectBtn,
+.updateBtn {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.approveBtn {
+  background: #1766FF;
+  color: white;
+}
+
+.rejectBtn {
+  background: #ff4d4d;
+  color: white;
+}
+
+.updateBtn {
+  background: #1766FF;
+  color: white;
+  width: 10rem;
+}
+
+/* Yacht Details Section */
+.yacht_details_box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about, .summary, .guidelines, .faqs, .cancellation {
+  border-radius: 8px;
+  padding: 1.5rem 0;
+  text-align: left;
+}
+
+.about h3, .summary h3, .guidelines h3, .faqs h3, .cancellation h3 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  color: #000;
+  font-weight: 400;
+}
+
+.about p, .summary p, .guidelines ul, .faqs p, .cancellation p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0.5rem 0;
+}
+
+.guidelines ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.guidelines ul li {
+  margin-bottom: 0.75rem;
+}
+
+/* Delete Button */
+.deleteButton {
+  margin-top: 1rem;
+  padding: 0.75rem 2.5rem;
+  background-color: #E6E8EB;
+  color: #fd0925;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Loading and Error States */
+.loading, .error {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+
+.error {
+  color: #ff4d4d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 820px) {
+  .comp_body {
+      padding: 0 5px;
+  }
+
+  .section_head {
+      font-size: 32px;
+      line-height: 42px;
+  }
+
+  .info_row {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+  }
+
+  .pricingActions button,
+  .approveBtn,
+  .rejectBtn,
+  .updateBtn,
+  .deleteButton {
+      width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .pricesGrid {
+      grid-template-columns: 1fr;
+  }
+
+  .inputGroup input {
+      font-size: 14px;
+  }
+
+  .Y2 {
+      max-height: 300px;
+  }
+}

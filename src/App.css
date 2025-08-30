@@ -1,0 +1,10 @@
+#root {
+ margin: 0;
+ padding: 0;
+ background: #F2F2F2;
+ /* height: 100vh; */
+}
+body{
+    font-family: "Joan", serif;
+    font-weight: 400;
+}
